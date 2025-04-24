@@ -33,17 +33,18 @@ const DashboardFootnote = ({ intl, variant }) => {
   );
 
   return (
-    <Footnote
-      icon={faCalendarAlt}
-      text={(
-        <FormattedMessage
-          id="courseCelebration.dashboardInfo" // for historical reasons
-          defaultMessage="You can access this course and its materials on your {dashboardLink}."
-          description="Text that precedes link to learner's dashboard"
-          values={{ dashboardLink }}
-        />
-      )}
-    />
+    <></>
+    // <Footnote
+    //   icon={faCalendarAlt}
+    //   text={(
+    //     <FormattedMessage
+    //       id="courseCelebration.dashboardInfo" // for historical reasons
+    //       defaultMessage="You can access this course and its materials on your {dashboardLink}."
+    //       description="Text that precedes link to learner's dashboard"
+    //       values={{ dashboardLink }}
+    //     />
+    //   )}
+    // />
   );
 };
 

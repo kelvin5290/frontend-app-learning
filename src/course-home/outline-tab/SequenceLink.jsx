@@ -38,7 +38,7 @@ const SequenceLink = ({
 
   const timezoneFormatArgs = userTimezone ? { timeZone: userTimezone } : {};
 
-  const coursewareUrl = <Link to={`/course/${courseId}/${id}`}>{title}</Link>;
+  const coursewareUrl = <Link to={`/course/${courseId}/${id}`}>{title.replace(/[\(\（]?\s*\d+\s*(題問題|问题|Questions)\s*[\)\）]?/, '')}</Link>;
   const displayTitle = showLink ? coursewareUrl : title;
 
   const dueDateMessage = (
@@ -113,7 +113,7 @@ const SequenceLink = ({
             <span className="sr-only">
               , {intl.formatMessage(complete ? messages.completedAssignment : messages.incompleteAssignment)}
             </span>
-            <EffortEstimate className="ml-3 align-middle" block={sequence} />
+            {/* <EffortEstimate className="ml-3 align-middle" block={sequence} /> */}
           </div>
         </div>
         {hideFromTOC && (
@@ -126,11 +126,11 @@ const SequenceLink = ({
             </span>
           </div>
         )}
-        <div className="row w-100 m-0 ml-3 pl-3">
+        {/* <div className="row w-100 m-0 ml-3 pl-3">
           <small className="text-body pl-2">
             {due ? dueDateMessage : noDueDateMessage}
           </small>
-        </div>
+        </div> */}
       </div>
     </li>
   );

@@ -40,25 +40,26 @@ const BookmarkButton = ({
   }, [isBookmarked, unitId]);
 
   return (
-    <StatefulButton
-      variant="link"
-      className="px-1 ml-n1 btn-sm text-primary-500"
-      onClick={toggleBookmark}
-      state={state}
-      disabledStates={['defaultProcessing', 'bookmarkedProcessing']}
-      labels={{
-        default: addBookmarkLabel,
-        defaultProcessing: addBookmarkLabel,
-        bookmarked: hasBookmarkLabel,
-        bookmarkedProcessing: hasBookmarkLabel,
-      }}
-      icons={{
-        default: <BookmarkOutlineIcon className="text-primary" />,
-        defaultProcessing: <BookmarkOutlineIcon className="text-primary" />,
-        bookmarked: <BookmarkFilledIcon className="text-primary" />,
-        bookmarkedProcessing: <BookmarkFilledIcon className="text-primary" />,
-      }}
-    />
+    <></>
+    // <StatefulButton
+    //   variant="link"
+    //   className="px-1 ml-n1 btn-sm text-primary-500"
+    //   onClick={toggleBookmark}
+    //   state={state}
+    //   disabledStates={['defaultProcessing', 'bookmarkedProcessing']}
+    //   labels={{
+    //     default: addBookmarkLabel,
+    //     defaultProcessing: addBookmarkLabel,
+    //     bookmarked: hasBookmarkLabel,
+    //     bookmarkedProcessing: hasBookmarkLabel,
+    //   }}
+    //   icons={{
+    //     default: <BookmarkOutlineIcon className="text-primary" />,
+    //     defaultProcessing: <BookmarkOutlineIcon className="text-primary" />,
+    //     bookmarked: <BookmarkFilledIcon className="text-primary" />,
+    //     bookmarkedProcessing: <BookmarkFilledIcon className="text-primary" />,
+    //   }}
+    // />
   );
 };
 

@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { sendTrackEvent, sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
-
+import { useCourseOutlineSidebar } from '../hooks';
 import { checkBlockCompletion } from '@src/courseware/data';
 import { getCourseOutline } from '@src/courseware/data/selectors';
 import messages from '../messages';
 import UnitIcon, { UNIT_ICON_TYPES } from './UnitIcon';
+import { breakpoints, useWindowSize } from '@openedx/paragon';
 
 const SidebarUnit = ({
   id,
@@ -28,7 +29,10 @@ const SidebarUnit = ({
   } = unit;
   const dispatch = useDispatch();
   const { sequences = {} } = useSelector(getCourseOutline);
-
+  const {
+    handleToggleCollapse
+  } = useCourseOutlineSidebar();
+  const isMobileView = useWindowSize().width < breakpoints.small.minWidth;
   const logEvent = (eventName, widgetPlacement) => {
     const findSequenceByUnitId = (unitId) => Object.values(sequences).find(seq => seq.unitIds.includes(unitId));
     const activeSequence = findSequenceByUnitId(activeUnitId);
@@ -52,6 +56,10 @@ const SidebarUnit = ({
 
   const handleClick = () => {
     logEvent('edx.ui.lms.sequence.tab_selected', 'left');
+    
+    
+    if (isMobileView)
+      handleToggleCollapse()
     dispatch(checkBlockCompletion(courseId, sequenceId, activeUnitId));
   };
 

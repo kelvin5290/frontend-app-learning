@@ -32,7 +32,7 @@ const CourseInProgress = ({ intl }) => {
   return (
     <>
       <Helmet>
-        <title>{`${intl.formatMessage(messages.endOfCourseTitle)} | ${title} | ${getConfig().SITE_NAME}`}</title>
+        <title>Green Radar Training Platform</title>
       </Helmet>
       <div className="row w-100 mx-0 mb-4 px-5 py-4 border border-light justify-content-center">
         <div className="col-12 p-0 h2 text-center">
@@ -54,7 +54,7 @@ const CourseInProgress = ({ intl }) => {
           </div>
         </Alert>
         <DashboardFootnote variant="in_progress" />
-        <CatalogSuggestion variant="in_progress" />
+        {/* <CatalogSuggestion variant="in_progress" /> */}
       </div>
     </>
   );

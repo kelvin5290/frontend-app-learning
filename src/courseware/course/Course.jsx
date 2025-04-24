@@ -73,7 +73,7 @@ const Course = ({
   return (
     <SidebarProviderComponent courseId={courseId} unitId={unitId}>
       <Helmet>
-        <title>{`${pageTitleBreadCrumbs.join(' | ')} | ${getConfig().SITE_NAME}`}</title>
+        <title>Green Radar Training Platform</title>
       </Helmet>
       <div className="position-relative d-flex align-items-xl-center mb-4 mt-1 flex-column flex-xl-row">
         {navigationDisabled || (
@@ -105,7 +105,7 @@ const Course = ({
         </div>
       </div>
 
-      <AlertList topic="sequence" />
+      {/* <AlertList topic="sequence" /> */}
       <Sequence
         unitId={unitId}
         sequenceId={sequenceId}

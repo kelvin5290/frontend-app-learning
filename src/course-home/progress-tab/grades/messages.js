@@ -160,12 +160,12 @@ const messages = defineMessages({
   },
   problemScoreLabel: {
     id: 'progress.detailedGrades.problemScore.label',
-    defaultMessage: 'Problem Scores:',
+    defaultMessage: 'Question Scores:',
     description: 'Label text which precedes detailed view of all scores per assignment',
   },
   problemScoreToggleAltText: {
     id: 'progress.detailedGrades.problemScore.toggleButton',
-    defaultMessage: 'Toggle individual problem scores for {subsectionTitle}',
+    defaultMessage: 'Toggle individual Question scores for {subsectionTitle}',
     description: 'Alt text for button which switches detailed view per module',
   },
   sectionGradeOverridden: {

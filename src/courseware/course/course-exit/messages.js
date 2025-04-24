@@ -78,12 +78,12 @@ const messages = defineMessages({
   },
   endOfCourseDescription: {
     id: 'courseExit.endOfCourseDescription',
-    defaultMessage: 'Unfortunately, you are not currently eligible for a certificate. You need to receive a passing grade to be eligible for a certificate.',
+    defaultMessage: 'Sorry, you are not currently eligible for a certificate. You need to receive a passing grade to be eligible for a certificate.',
     description: 'Shown to learner when they did not pass the course',
   },
   endOfCourseHeader: {
     id: 'courseExit.endOfCourseHeader',
-    defaultMessage: 'You’ve reached the end of the course!',
+    defaultMessage: 'End of this Course',
   },
   endOfCourseTitle: {
     id: 'courseExit.endOfCourseTitle',

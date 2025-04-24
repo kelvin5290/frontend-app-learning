@@ -27,7 +27,7 @@ const SidebarSection = ({ intl, section, handleSelectSection }) => {
         <CompletionIcon completionStat={completionStat} />
       </div>
       <div className="col-10 ml-3 p-0 flex-grow-1 text-dark-500 text-left text-break">
-        {title}
+        {title.replace(/[\(\（]?\s*\d+\s*(題問題|问题|Questions)\s*[\)\）]?/, '')}
         <span className="sr-only">
           , {intl.formatMessage(complete
           ? courseOutlineMessages.completedSection

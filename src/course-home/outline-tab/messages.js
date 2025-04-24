@@ -162,7 +162,7 @@ const messages = defineMessages({
   },
   start: {
     id: 'learning.outline.start',
-    defaultMessage: 'Start course',
+    defaultMessage: 'Begin course',
     description: 'The text for button which starts the course',
   },
   startBlurb: {

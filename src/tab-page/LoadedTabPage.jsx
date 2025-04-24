@@ -51,7 +51,7 @@ const LoadedTabPage = ({
         org={org}
       />
       <Helmet>
-        <title>{`${activeTab ? `${activeTab.title} | ` : ''}${title} | ${getConfig().SITE_NAME}`}</title>
+        <title>Green Radar Training Platform</title>
       </Helmet>
       {originalUserIsStaff && (
         <InstructorToolbar

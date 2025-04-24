@@ -40,9 +40,9 @@ const CourseDates = ({
             />
           ))}
         </ol>
-        <a className="font-weight-bold ml-4 pl-1 small" href={datesTabLink}>
+        {/* <a className="font-weight-bold ml-4 pl-1 small" href={datesTabLink}>
           {intl.formatMessage(messages.allDates)}
-        </a>
+        </a> */}
       </div>
     </section>
   );

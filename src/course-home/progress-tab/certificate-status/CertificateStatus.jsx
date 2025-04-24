@@ -134,9 +134,8 @@ const CertificateStatus = ({ intl }) => {
           <FormattedMessage
             id="progress.certificateStatus.downloadableBody"
             defaultMessage="
-              Showcase your accomplishment on LinkedIn or your resumé today.
               You can download your certificate now and access it any time from your
-              {dashboardLink} and {profileLink}."
+              {dashboardLink}."
             description="Recommending an action for learner when course certificate is available"
             values={{ dashboardLink, profileLink }}
           />

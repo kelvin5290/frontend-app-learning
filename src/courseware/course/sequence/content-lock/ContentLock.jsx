@@ -30,7 +30,7 @@ const ContentLock = ({
         })}
       </p>
       <p>
-        <Button variant="primary" onClick={handleClick}>{intl.formatMessage(messages['learn.contentLock.goToSection'])}</Button>
+        <Button variant="primary" onClick={handleClick}>{intl.formatMessage(messages['learn.contentLock.goToSection'],{prereqSectionName})}</Button>
       </p>
     </>
   );

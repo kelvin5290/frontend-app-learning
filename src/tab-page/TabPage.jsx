@@ -4,6 +4,7 @@ import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 
+// import Footer from '@edx/frontend-component-footer';
 import { Toast } from '@openedx/paragon';
 import { LearningHeader as Header } from '@edx/frontend-component-header';
 import FooterSlot from '@openedx/frontend-slot-footer';
@@ -80,7 +81,7 @@ const TabPage = ({ intl, ...props }) => {
           {intl.formatMessage(messages.failure)}
         </p>
       )}
-      <FooterSlot />
+      {/* <Footer /> */}
     </>
   );
 };

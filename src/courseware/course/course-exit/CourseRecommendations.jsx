@@ -156,9 +156,9 @@ const CourseRecommendations = ({ intl, variant }) => {
     });
   }
 
-  if (recommendationsStatus === FAILED || (recommendationsStatus === LOADED && recommendationsLength < 2)) {
-    return (<CatalogSuggestion variant={variant} />);
-  }
+  // if (recommendationsStatus === FAILED || (recommendationsStatus === LOADED && recommendationsLength < 2)) {
+  //   return (<CatalogSuggestion variant={variant} />);
+  // }
 
   if (recommendationsStatus === LOADING) {
     return <PageLoading srMessage={intl.formatMessage(messages.loadingRecommendations)} />;

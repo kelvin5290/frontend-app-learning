@@ -194,7 +194,7 @@ const OutlineTab = ({ intl }) => {
                 subscribedToReminders={selectedGoal && 'subscribedToReminders' in selectedGoal ? selectedGoal.subscribedToReminders : false}
               />
             )}
-            <CourseTools />
+            {/* <CourseTools /> */}
             <PluginSlot
               id="outline_tab_notifications_slot"
               pluginProps={{ courseId }}
@@ -213,8 +213,8 @@ const OutlineTab = ({ intl }) => {
                 org={org}
               />
             </PluginSlot>
-            <CourseDates />
-            <CourseHandouts />
+            {/* <CourseDates /> */}
+            {/* <CourseHandouts /> */}
           </div>
         )}
       </div>

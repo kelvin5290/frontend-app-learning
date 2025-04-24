@@ -43,7 +43,8 @@ const StartOrResumeCourseCard = ({ intl }) => {
   return (
     <Card className="mb-3 raised-card" data-testid="start-resume-card">
       <Card.Header
-        title={hasVisitedCourse ? intl.formatMessage(messages.resumeBlurb) : intl.formatMessage(messages.startBlurb)}
+        // title={hasVisitedCourse ? intl.formatMessage(messages.resumeBlurb) : intl.formatMessage(messages.startBlurb)}
+        title=""
         actions={(
           <Button
             variant="brand"

@@ -98,9 +98,9 @@ const slice = createSlice({
       // and if the parent section has a locked (prerequisites) sequence. If both conditions
       // are met, it switches the state of the 'courseOutlineShouldUpdate' flag to true,
       // indicating that the sidebar outline structure needs to be refetched.
-      if (isAllUnitsAreComplete && hasLockedSequence) {
-        state.courseOutlineShouldUpdate = true;
-      }
+      // if (isAllUnitsAreComplete && hasLockedSequence) {
+      state.courseOutlineShouldUpdate = true;
+      // }
 
       // Update amount of completed units of the section
       state.courseOutline.sections[sectionId].completionStat.completed = sectionSequences.reduce(

@@ -20,7 +20,7 @@ import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
 
 import CelebrationMobile from './assets/celebration_456x328.gif';
 import CelebrationDesktop from './assets/celebration_750x540.gif';
-import certificate from '../../../generic/assets/edX_certificate.png';
+// import certificate from '../../../generic/assets/edX_certificate.png';
 import certificateLocked from '../../../generic/assets/edX_locked_certificate.png';
 import { FormattedPricing } from '../../../generic/upgrade-button';
 import messages from './messages';
@@ -32,7 +32,7 @@ import UpgradeFootnote from './UpgradeFootnote';
 import SocialIcons from '../../social-share/SocialIcons';
 import { logClick, logVisit } from './utils';
 import { DashboardLink, IdVerificationSupportLink, ProfileLink } from '../../../shared/links';
-import CourseRecommendations from './CourseRecommendations';
+// import CourseRecommendations from './CourseRecommendations';
 
 const LINKEDIN_BLUE = '#2867B2';
 
@@ -78,7 +78,7 @@ const CourseCelebration = ({ intl }) => {
   let buttonVariant = 'outline-primary';
   let buttonEvent = null;
   let buttonSuffix = null;
-  let certificateImage = certificate;
+  // let certificateImage = certificate;
   let footnote;
   let message;
   let certHeader;
@@ -92,9 +92,7 @@ const CourseCelebration = ({ intl }) => {
           <FormattedMessage
             id="courseCelebration.certificateBody.available"
             defaultMessage="
-              Showcase your accomplishment on LinkedIn or your resumé today.
-              You can download your certificate now and access it any time from your
-              {dashboardLink} and {profileLink}."
+              You can download your certificate now."
             values={{ dashboardLink, profileLink }}
             description="Recommending an action for learner when course certificate is available"
           />
@@ -235,7 +233,7 @@ const CourseCelebration = ({ intl }) => {
             </span>
           );
         }
-        certificateImage = certificateLocked;
+        // certificateImage = certificateLocked;
         visitEvent = 'celebration_upgrade';
         if (verifiedMode.accessExpirationDate) {
           footnote = <UpgradeFootnote deadline={verifiedMode.accessExpirationDate} href={verifiedMode.upgradeUrl} />;
@@ -278,7 +276,7 @@ const CourseCelebration = ({ intl }) => {
   return (
     <>
       <Helmet>
-        <title>{`${intl.formatMessage(messages.congratulationsHeader)} | ${title} | ${getConfig().SITE_NAME}`}</title>
+        <title>Green Radar Training Platform</title>
       </Helmet>
       <div className="row w-100 mx-0 mb-4 px-5 py-4 border border-light">
         <div className="col-12 p-0 h2 text-center">
@@ -334,7 +332,7 @@ const CourseCelebration = ({ intl }) => {
                   {buttonSuffix}
                 </div>
               </div>
-              {certStatus !== 'unverified' && (
+              {/* {certStatus !== 'unverified' && (
                 <div className="col-12 order-0 col-md-3 order-md-1 w-100 mb-3 p-0 text-center">
                   <img
                     src={certificateImage}
@@ -343,7 +341,7 @@ const CourseCelebration = ({ intl }) => {
                     style={{ maxWidth: '13rem' }}
                   />
                 </div>
-              )}
+              )} */}
             </div>
           </Alert>
           )}
@@ -357,7 +355,7 @@ const CourseCelebration = ({ intl }) => {
             />
           ))}
           {footnote}
-          <CourseRecommendations variant={visitEvent} />
+          {/* <CourseRecommendations variant={visitEvent} /> */}
         </div>
       </div>
     </>

@@ -85,7 +85,7 @@ const CourseEndAlert = ({ payload }) => {
   return (
     <Alert variant="info" icon={Info}>
       <strong>{msg}</strong><br />
-      {description}
+      {/* {description} */}
     </Alert>
   );
 };

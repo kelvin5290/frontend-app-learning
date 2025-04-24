@@ -37,14 +37,14 @@ const RelatedLinks = ({ intl }) => {
     <section className="mb-4 x-small">
       <h3 className="h4">{intl.formatMessage(messages.relatedLinks)}</h3>
       <ul className="pl-4">
-        {datesTabUrl && (
+        {/* {datesTabUrl && (
         <li>
           <Hyperlink destination={datesTabUrl} onClick={() => logLinkClicked('dates')}>
             {intl.formatMessage(messages.datesCardLink)}
           </Hyperlink>
           <p>{intl.formatMessage(messages.datesCardDescription)}</p>
         </li>
-        )}
+        )} */}
         {overviewTabUrl && (
         <li>
           <Hyperlink destination={overviewTabUrl} onClick={() => logLinkClicked('course_outline')}>
